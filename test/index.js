@@ -1,17 +1,20 @@
-var expect = require("chai").expect;
-const dateFormater = require('../src/index');
+const expect = require('chai').expect
+const DateFormater = require('../src/index')
+const mocha = require('mocha')
+const it = mocha.it
+const describe = mocha.describe
 
-describe("Working of date formater",function(){
-    describe("Basic working",function(){
-        it("Check root funciton invoke",function(){
-            const data = dateFormater();
-            expect(data).to.equal("Working")
-        });
-        it("Check today date is correct",function(){
-            const x =new dateFormater();
-            const t1 = x.getDate();
-            expect(t1).to.equal("23:3:2021")
-        });
-    });
-    
-});
+describe('Working of date formater', function () {
+  describe('Basic working', function () {
+    it('Check today date is correct', function () {
+      const x = new DateFormater()
+      const t1 = x.getDate()
+      expect(t1).to.equal('23:03:2021')
+    })
+    it('Check todays day is correct', function () {
+      const x = new DateFormater()
+      const t1 = x.getDay()
+      expect(t1).to.equal('Tuesday')
+    })
+  })
+})

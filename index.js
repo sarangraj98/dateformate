@@ -1,4 +1,7 @@
-const dateFormater = require('./src/index')
+const DateFormater = require('./src/index')
 
-const x = new dateFormater();
-console.log(x.getDate())
+const x = new DateFormater()
+
+module.exports = {
+  dateFormater: x
+}

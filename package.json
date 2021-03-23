@@ -1,10 +1,13 @@
 {
-  "name": "dateformat",
+  "name": "secondz",
   "version": "1.0.0",
   "description": "A package for date formating",
   "main": "index.js",
+  "devDependencies": {
+    "standard": "*"
+  },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "standard && mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   "homepage": "https://github.com/sarangraj98/dateformate#readme",
   "dependencies": {
     "chai": "^4.3.4",
-    "mocha": "^8.3.2"
+    "mocha": "^8.3.2",
+    "standard": "^16.0.3"
   }
 }
