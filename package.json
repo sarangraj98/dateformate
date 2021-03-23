@@ -1,0 +1,27 @@
+{
+  "name": "dateformat",
+  "version": "1.0.0",
+  "description": "A package for date formating",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarangraj98/dateformate.git"
+  },
+  "keywords": [
+    "date",
+    "formater"
+  ],
+  "author": "Sarang Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarangraj98/dateformate/issues"
+  },
+  "homepage": "https://github.com/sarangraj98/dateformate#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}
