@@ -16,10 +16,9 @@ Supported functions
 
 Supported languages of days 
 ---------------------------
- ______________________________________
-|    Name         |     Code           |
-|                 |                    |
-| English         |       En           |
-| Malayalam       |       Ml           |
-| Hindi           |       Hd           |
-|_________________|____________________|
+
+| Name | Code  | 
+| :---:   | :-: | 
+| English | En |
+| Malayalam | Ml |
+| Hindi | Hd | 
