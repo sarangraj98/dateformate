@@ -7,7 +7,7 @@
     "standard": "*"
   },
   "scripts": {
-    "test": "standard && mocha --reporter spec"
+    "test": " mocha --reporter spec"
   },
   "repository": {
     "type": "git",
