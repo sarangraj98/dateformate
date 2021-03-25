@@ -18,8 +18,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org
       - name : Test
-        run: npm install
-        run: npm test
+        run: npm install && npm test
         working-directory: secondz
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
