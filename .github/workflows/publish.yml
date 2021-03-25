@@ -20,5 +20,4 @@ jobs:
       - name : Test
         run: npm install && npm test
         working-directory: secondz
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+        
