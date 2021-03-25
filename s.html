@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script>
+
+        function findFact() {
+            var number = document.getElementById("factNumber").value;
+            for (var i = 1; i <= 10; i++) {
+                const a = document.createElement("li")
+                var textNode = document.createTextNode(`${i} x ${number} = ${i * number}`)
+                a.appendChild(textNode)
+                document.getElementById("resultFact").appendChild(a)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" id="factNumber" />
+    <ul id="resultFact">
+    </ul>
+    <button type="button" onClick="findFact();" name="SUBMIT" >SUBMIT</input>
+</body>
+
+</html>
