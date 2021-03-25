@@ -13,12 +13,12 @@ jobs:
       - name : checkout
         uses: actions/checkout@v2
       - name : node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2.1.5
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org
       - name: publish
-        run: npm publish 
+        run: npm publish --access public
         working-directory: secondz
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
