@@ -1,6 +1,6 @@
 {
   "name": "secondz",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package for date formating",
   "main": "index.js",
   "devDependencies": {
@@ -18,11 +18,11 @@
     "formater"
   ],
   "author": "Sarang Raj",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sarangraj98/dateformate/issues"
+    "url": "https://github.com/sarangraj98/secondz/issues"
   },
-  "homepage": "https://github.com/sarangraj98/dateformate#readme",
+  "homepage": "https://github.com/sarangraj98/secondz#readme",
   "dependencies": {
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
