@@ -53,9 +53,6 @@ function DateFormater() {
       return `${formatDate.join(`${match[0]}`)}`
     }
   }
-  function getSingleDay() {
-    const day = days[0].arrays[today.getDay() - 1]
-  }
   function getSingleDate(format) {
     let index;
     for (var i = 0; i < format.length; i++) {
