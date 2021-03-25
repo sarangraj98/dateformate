@@ -48,10 +48,8 @@ function DateFormater() {
     getSingleYear(format)
     getSingleMonth(format)
     if (lang) {
-      console.log(`${formatDate.join(`${match[0]}`)} ${this.getDay(lang)}`)
       return `${formatDate.join(`${match[0]}`)} ${this.getDay(lang)}`
     }else{
-      console.log(`${formatDate.join(`${match[0]}`)}`)
       return `${formatDate.join(`${match[0]}`)}`
     }
   }
@@ -106,8 +104,12 @@ function DateFormater() {
   }
   // Generate a random date
   this.random = function () {
-    //console.log(new Date(new Date(2012, 0, 1).getTime() + Math.random() * (new Date().getTime() - new Date(2012, 0, 1).getTime())))
     return new Date(new Date(2012, 0, 1).getTime() + Math.random() * (new Date().getTime() - new Date(2012, 0, 1).getTime()));
+  }
+  // Find day by passing date
+  this.findDay = function(dateStr,lang){
+    var date = new Date(dateStr)
+    return date.toLocaleDateString('nl-NL', { weekday: 'long' })
   }
 }
 module.exports = DateFormater

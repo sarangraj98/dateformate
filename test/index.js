@@ -34,5 +34,9 @@ describe('Working of date formater', function () {
     it(`Check for random date` , function () {
       secondz.random()
     })
+    it(`Find the day on passing date` , function () {
+      const day = secondz.findDay('08/11/1998')
+      expect(day).to.equal('Tuesday')
+    })
   })
 })
