@@ -10,7 +10,7 @@ describe('Working of date formater', function () {
   describe('Basic working', function () {
     it('Check today date is correct', function () {
       const t1 = secondz.getDate()
-      expect(t1).to.equal('25:03:2021')
+      expect(t1).to.equal('26:03:2021')
     })
     for(let i=0;i<days.length;i++){
       it(`Check todays day is correct in ${days[i].lang}` , function () {
@@ -26,7 +26,7 @@ describe('Working of date formater', function () {
     }
     it(`Check adding day greater than number of days within 1 month` , function () {
       const t1 = secondz.add(10,'today')
-      expect(t1).to.equal(`05:10:2021`)
+      expect(t1).to.equal(`06:10:2021`)
     })
     it(`Check for correct spliting the format` , function () {
       secondz.format('DD-m-YYYY','Ml')

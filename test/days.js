@@ -2,17 +2,17 @@ module.exports.days = [
     {
         lang:'English',
         code:'En',
-        today:'Thursday'
+        today:'Friday'
     },
     {
         lang:'Malayalam',
         code:'Ml',
-        today:'വ്യാഴം'
+        today:'വെള്ളി'
     },
     {
         lang:'Hindi',
         code:'Hd',
-        today:'गुरुवार'
+        today:'शुक्रवार'
     },
     
 
