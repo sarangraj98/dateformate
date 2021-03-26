@@ -22,8 +22,9 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm config set registry http://registry.npmjs.org
+      - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          secure: sxH+fLqlnL//PL7UiVJ1E9tfU8lANFjDcM5Fh5jJvb83cw+xLYE7tz9hLfP+0OIs8psI7e9cu7y/YPYAJeZxuPhElsj/WPdU4AQkiYajvaxIUKK+vV+DWdfcBFJ/8BCX1XewVbo0kTgZxtaaWBoE6QDbAtHGQgkE+5LL6EH3tv1pm4MAr/OZMK0L8V9p+FLwNExLAoZMQnkEZa6ugOYCfM2W4sdkt4Dz9hK0VBzqkIIkt/nOYT7/rwUfcH6cI1aTF44dv5bNzipsCYcxEyBV3Q5zT+Ghmq60iaIjf+BnUHnvcUoQMh3isJHPlaUz1pJd5V6d7Xi54E26FiSRP80XYw==
+      
