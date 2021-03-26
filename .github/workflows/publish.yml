@@ -11,6 +11,13 @@ jobs:
         with:
           node-version: 12
       - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+      - name: GPR authentication for npm
+        # You may pin to the exact commit or the version.
+        # uses: aquacash5/npm-gpr-auth@b60ce3c46ccced6f32127e3029f05ef5b25a2b7b
+        uses: secondz/npm-gpr-auth@v2
+        with:
+        # The token used for authentication. Usually, this should be your `secrets.GITHUB_TOKEN`
+          token: ${{secrets.GIT_TOKEN}}
       - run: npm ci
       - run: npm publish --access public
         env:
